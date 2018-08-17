@@ -1732,7 +1732,10 @@ my_cflags += -Wall -Werror -Wno-unused-variable -Wno-unused-value -Wno-unused-fu
              -Wno-unused-label -Wno-user-defined-warnings -Wno-unused-parameter -Wno-char-subscripts \
              -Wno-string-plus-int -Wno-sometimes-uninitialized -Wno-format-extra-args -Wno-format \
              -Wno-parentheses-equality -Wno-macro-redefined -Wno-logical-op-parentheses \
-             -Wno-parentheses -Wno-unused-private-field -Wno-missing-braces
+             -Wno-parentheses -Wno-unused-private-field -Wno-missing-braces \
+             -Wno-implicit-function-declaration -Wno-mismatched-tags -Wno-sign-compare -Wno-sign-conversion \
+             -Wno-reorder -Wno-null-conversion -Wno-overloaded-virtual -Wno-writable-strings -Wno-float-conversion \
+             -Wno-null-arithmetic -Wno-conversion
 
 # Disable clang-tidy if it is not found.
 ifeq ($(PATH_TO_CLANG_TIDY),)
